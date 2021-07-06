@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<center>
+
+
+
+<div class="slidecontainer">
+  <p> Engine1</p>
+  <input type="range" min="0" max="180" value="0">
+          <p>Value: <span id = "value2"></span></p>
+ 
+<p> Engine2</p>
+  <input type="range" min="0" max="180" value="0">
+          <p>Value: <span id = "value2"></span></p>
+
+   
+<p> Engine3</p>
+<input type="range" min="0" max="180" value="0">
+          <p>Value: <span id = "value2"></span></p>
+ <p> Engine4</p>
+<input type="range" min="0" max="180" value="0">
+          <p>Value: <span id = "value2"></span></p>
+ <p> Engine5</p>
+<input type="range" min="0" max="180" value="0">
+          <p>Value: <span id = "value2"></span></p>
+ <p> Engine6</p>
+<input type="range" min="0" max="180" value="0">
+          <p>Value: <span id = "value2"></span></p></div>
+
+</center>
+
+
+      </p>
+  <center>  
+<div>
+      <p> <input type="submit" value = "save" name = save style="font-size: 25px "></p>
+        <input type="submit" value = "on" name = on  style="font-size: 25px;">
+<input type="submit" value = "off" name = off  style="font-size: 25px;">
+
+    </div>
+</center>
+
+    </div>
+
+
+   
+
+<br><br><br><br>
+<center>
+
+            <div class = "forward">
+ <input type="submit" value = "Forward" name = Forward style="font-size: 20px;" >
+
+            </div>
+           
+            <div class = "center">
+ <input type="submit" value = "Left" name = left style="font-size: 20px;" >
+ <input type="submit" value = "Stop" name = stop style="font-size: 20px; " >
+ <input type="submit" value = "Right" name = Right style="font-size: 20px;" >
+ </div>
+            <div class = "backward">
+ <input type="submit" value = "Backward" name = backward style="font-size: 20px;" >
+ </div>
+</center>
+
+
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "a6bd5fe2-85e4-4797-bc4b-9f4faa3ab487", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "8ba850b1-26f7-473e-b24c-1f4d54ba5ffa", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+   
+
+</body>
+</html>
